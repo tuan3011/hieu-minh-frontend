@@ -269,7 +269,7 @@ export const IntroPage: React.FC<IntroPageProps> = ({
     <div className="intro-container">
       {/* Header giới thiệu */}
       <header className="intro-header">
-        <span className="badge">EPQ Personality Test</span>
+        <span className="badge">EPI Personality Test</span>
         <h1 className="title">Trắc Nghiệm Tính Cách Eysenck</h1>
         <p className="subtitle">
           Khám phá 4 nhóm khí chất cơ bản: <strong>Bình thản</strong>, <strong>Ưu tư</strong>,{' '}

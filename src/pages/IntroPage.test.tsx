@@ -111,6 +111,8 @@ describe('IntroPage Component — Dynamic Main Action Button & Survey States', (
     );
 
     expect(screen.getByText('Trắc Nghiệm Tính Cách Eysenck')).toBeInTheDocument();
+    expect(screen.getByText('EPI Personality Test')).toBeInTheDocument();
+    expect(screen.queryByText('EPQ Personality Test')).not.toBeInTheDocument();
     const mainBtn = screen.getByRole('button', { name: 'Bắt đầu khảo sát' });
     expect(mainBtn).toBeInTheDocument();
 
