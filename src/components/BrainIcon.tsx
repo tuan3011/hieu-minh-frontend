@@ -9,7 +9,7 @@ interface BrainIconProps {
 export const BrainIcon: React.FC<BrainIconProps> = ({
   className = '',
   size = 28,
-  color = '#A88768',
+  color = '#526B48',
 }) => {
   return (
     <svg
@@ -73,7 +73,7 @@ export const BrainIcon: React.FC<BrainIconProps> = ({
 
 export const NeuronSparkleIcon: React.FC<{ size?: number; color?: string; className?: string }> = ({
   size = 18,
-  color = '#C7D2BE',
+  color = '#A9BE91',
   className = '',
 }) => {
   return (
@@ -99,7 +99,7 @@ export const NeuronSparkleIcon: React.FC<{ size?: number; color?: string; classN
 
 export const LeafBranchIcon: React.FC<{ size?: number; color?: string; className?: string }> = ({
   size = 18,
-  color = '#F7F2E8',
+  color = '#FFFFFF',
   className = '',
 }) => {
   return (

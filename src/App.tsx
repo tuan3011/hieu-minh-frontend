@@ -108,7 +108,7 @@ export const App: React.FC = () => {
             title="Về trang chủ Hiểu Mình"
           >
             <div className="nav-logo-icon">
-              <BrainIcon size={24} color="#A88768" />
+              <BrainIcon size={24} color="#526B48" />
             </div>
             <div className="nav-logo-content">
               <div className="nav-logo-text">Hiểu Mình</div>

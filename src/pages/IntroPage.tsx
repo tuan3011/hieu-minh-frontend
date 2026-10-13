@@ -366,7 +366,7 @@ export const IntroPage: React.FC<IntroPageProps> = ({
             </button>
 
             <div className="modal-icon-badge">
-              <BrainIcon size={28} color="#A88768" />
+              <BrainIcon size={28} color="#526B48" />
             </div>
 
             <h3 id="in-progress-modal-title" className="modal-title">

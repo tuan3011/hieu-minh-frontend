@@ -221,7 +221,7 @@ export const QuestionPage: React.FC<QuestionPageProps> = ({
           </div>
 
           <p className="calm-quote">
-            <NeuronSparkleIcon size={15} color="#A88768" />
+            <NeuronSparkleIcon size={15} color="#526B48" />
             Cứ trả lời theo cảm nhận tự nhiên nhất của bạn. Không có câu trả lời đúng hay sai.
           </p>
         </div>
@@ -358,7 +358,7 @@ export const QuestionPage: React.FC<QuestionPageProps> = ({
               <span className="submit-btn-inner">
                 <span className="submit-btn-text">Nộp bài và xem kết quả</span>
                 <span className="submit-btn-leaf" aria-hidden="true">
-                  <LeafBranchIcon size={17} color="#F7F2E8" />
+                  <LeafBranchIcon size={17} color="#FFFFFF" />
                 </span>
               </span>
             ) : (
@@ -441,7 +441,7 @@ export const QuestionPage: React.FC<QuestionPageProps> = ({
         <div className="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div className="modal-card">
             <div className="modal-icon-badge">
-              <BrainIcon size={28} color="#4D5C43" />
+              <BrainIcon size={28} color="#526B48" />
             </div>
 
             <h3 id="modal-title" className="modal-title">
