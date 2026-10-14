@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Hiểu Mình - Minimalist Brain & Leaf Logo -->
+  <g id="brain-leaf-logo">
+    <!-- Left Hemisphere -->
+    <path
+      d="M16 11C13.2 11 10.8 12.3 9.4 14.5C7.8 16.8 7 19.5 7.2 22.2C7.4 24.8 8.8 26.9 10.8 28C12.3 28.8 14.2 28.9 16 28.4"
+      stroke="#526B48"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Right Hemisphere -->
+    <path
+      d="M16 11C18.8 11 21.2 12.3 22.6 14.5C24.2 16.8 25 19.5 24.8 22.2C24.6 24.8 23.2 26.9 21.2 28C19.7 28.8 17.8 28.9 16 28.4"
+      stroke="#526B48"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Cerebral Gyri / Folds (Left) -->
+    <path
+      d="M10.8 16.8C12.2 16.8 13.5 17.8 14.5 19.2"
+      stroke="#526B48"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M8.8 22.5C10.2 22.5 12 23.8 13 25.5"
+      stroke="#526B48"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+
+    <!-- Cerebral Gyri / Folds (Right) -->
+    <path
+      d="M21.2 16.8C19.8 16.8 18.5 17.8 17.5 19.2"
+      stroke="#526B48"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M23.2 22.5C21.8 22.5 20 23.8 19 25.5"
+      stroke="#526B48"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+
+    <!-- Center Division / Fissure -->
+    <path
+      d="M16 13V26.5"
+      stroke="#526B48"
+      stroke-width="1.2"
+      stroke-linecap="round"
+      stroke-dasharray="1 2.5"
+    />
+
+    <!-- Leaf Stem sprouting from top center -->
+    <path
+      d="M16 11.5C16 7.8 18.2 5 21 3.8"
+      stroke="#526B48"
+      stroke-width="1.8"
+      stroke-linecap="round"
+    />
+
+    <!-- Small Secondary Leaf (Left) -->
+    <path
+      d="M16.5 8C14.2 7 12.5 8.2 12 9.8C13.8 10.2 15.8 9.4 16.5 8Z"
+      fill="#DDEBCB"
+      stroke="#526B48"
+      stroke-width="1.2"
+      stroke-linejoin="round"
+    />
+
+    <!-- Main Leaf (Top Right) -->
+    <path
+      d="M21 3.8C21 1.2 24.2 0.8 26.8 1.8C26.8 4.8 24.2 6.2 21 3.8Z"
+      fill="#A9BE91"
+      stroke="#526B48"
+      stroke-width="1.4"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M21 3.8L26.2 1.8"
+      stroke="#526B48"
+      stroke-width="1"
+      stroke-linecap="round"
+    />
+
+    <!-- Central Neural / Growth Node -->
+    <circle cx="16" cy="11.5" r="1.2" fill="#526B48" />
+  </g>
+</svg>

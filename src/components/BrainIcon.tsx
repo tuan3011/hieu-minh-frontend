@@ -1,15 +1,19 @@
 import React from 'react';
 
-interface BrainIconProps {
+export interface BrainIconProps {
   className?: string;
   size?: number;
   color?: string;
+  leafColor?: string;
+  subLeafColor?: string;
 }
 
 export const BrainIcon: React.FC<BrainIconProps> = ({
   className = '',
   size = 28,
   color = '#526B48',
+  leafColor = '#A9BE91',
+  subLeafColor = '#DDEBCB',
 }) => {
   return (
     <svg
@@ -21,55 +25,93 @@ export const BrainIcon: React.FC<BrainIconProps> = ({
       className={className}
       aria-hidden="true"
     >
-      {/* Nét vẽ não bộ mềm mại, phong cách neuroscience & cute */}
-      {/* Bán cầu trái */}
+      {/* Biểu tượng thương hiệu Hiểu Mình: Bộ não tối giản kết hợp chiếc lá nhỏ */}
+      {/* Bán cầu não trái */}
       <path
-        d="M16 6C13.5 6 11.5 7.5 11 9.5C9.5 9.8 8 11.5 8 13.5C8 14.5 8.5 15.5 9 16C8 17 7.5 18.5 8 20C8.5 21.8 10.2 23 12 23C13 23 14 22.5 14.5 21.8C15 22.8 15.5 23.5 16 23.8"
+        d="M16 11C13.2 11 10.8 12.3 9.4 14.5C7.8 16.8 7 19.5 7.2 22.2C7.4 24.8 8.8 26.9 10.8 28C12.3 28.8 14.2 28.9 16 28.4"
         stroke={color}
-        strokeWidth="2"
+        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* Bán cầu phải */}
+      {/* Bán cầu não phải */}
       <path
-        d="M16 6C18.5 6 20.5 7.5 21 9.5C22.5 9.8 24 11.5 24 13.5C24 14.5 23.5 15.5 23 16C24 17 24.5 18.5 24 20C23.5 21.8 21.8 23 20 23C19 23 18 22.5 17.5 21.8C17 22.8 16.5 23.5 16 23.8"
+        d="M16 11C18.8 11 21.2 12.3 22.6 14.5C24.2 16.8 25 19.5 24.8 22.2C24.6 24.8 23.2 26.9 21.2 28C19.7 28.8 17.8 28.9 16 28.4"
         stroke={color}
-        strokeWidth="2"
+        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* Các rãnh não uốn lượn mềm mại bên trong */}
+      {/* Rãnh não uốn lượn mềm mại bên trái */}
       <path
-        d="M13 11C13.5 12 14.5 12.5 15.5 12.5"
+        d="M10.8 16.8C12.2 16.8 13.5 17.8 14.5 19.2"
         stroke={color}
-        strokeWidth="1.75"
+        strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
-        d="M19 11C18.5 12 17.5 12.5 16.5 12.5"
+        d="M8.8 22.5C10.2 22.5 12 23.8 13 25.5"
         stroke={color}
-        strokeWidth="1.75"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      {/* Rãnh não uốn lượn mềm mại bên phải */}
+      <path
+        d="M21.2 16.8C19.8 16.8 18.5 17.8 17.5 19.2"
+        stroke={color}
+        strokeWidth="1.5"
         strokeLinecap="round"
       />
       <path
-        d="M11.5 17C12.5 17 13.5 17.8 14 19"
+        d="M23.2 22.5C21.8 22.5 20 23.8 19 25.5"
         stroke={color}
-        strokeWidth="1.75"
+        strokeWidth="1.5"
         strokeLinecap="round"
+      />
+      {/* Trục liên kết nơ-ron trung tâm */}
+      <path
+        d="M16 13V26.5"
+        stroke={color}
+        strokeWidth="1.2"
+        strokeLinecap="round"
+        strokeDasharray="1 2.5"
+      />
+      {/* Cuống lá vươn lên từ tâm não */}
+      <path
+        d="M16 11.5C16 7.8 18.2 5 21 3.8"
+        stroke={color}
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+      {/* Mầm lá phụ nhỏ bên trái */}
+      <path
+        d="M16.5 8C14.2 7 12.5 8.2 12 9.8C13.8 10.2 15.8 9.4 16.5 8Z"
+        fill={subLeafColor}
+        stroke={color}
+        strokeWidth="1.2"
+        strokeLinejoin="round"
+      />
+      {/* Chiếc lá chính vươn lên góc trên phải */}
+      <path
+        d="M21 3.8C21 1.2 24.2 0.8 26.8 1.8C26.8 4.8 24.2 6.2 21 3.8Z"
+        fill={leafColor}
+        stroke={color}
+        strokeWidth="1.4"
+        strokeLinejoin="round"
       />
       <path
-        d="M20.5 17C19.5 17 18.5 17.8 18 19"
+        d="M21 3.8L26.2 1.8"
         stroke={color}
-        strokeWidth="1.75"
+        strokeWidth="1"
         strokeLinecap="round"
       />
-      {/* Điểm nối neuron nhỏ xinh */}
-      <circle cx="16" cy="16" r="1.5" fill={color} />
-      <circle cx="16" cy="7.5" r="1" fill={color} />
-      <circle cx="16" cy="22" r="1" fill={color} />
+      {/* Điểm nơ-ron kết nối */}
+      <circle cx="16" cy="11.5" r="1.2" fill={color} />
     </svg>
   );
 };
+
+export const BrainLogo = BrainIcon;
 
 export const NeuronSparkleIcon: React.FC<{ size?: number; color?: string; className?: string }> = ({
   size = 18,
